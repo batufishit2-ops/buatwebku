@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blog & Artikel – BuatWebku</title>
+  <meta name="description" content="Artikel edukasi seputar website untuk UMKM dan bisnis: tips memilih jasa website, perbedaan landing page vs toko online, dan lainnya.">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+    .container { max-width: 1120px; margin: 0 auto; padding: 0 1.25rem; }
+    header { position: sticky; top: 0; z-index: 10; background: rgba(248, 250, 252, 0.95); backdrop-filter: blur(8px); border-bottom: 1px solid #e5e7eb; }
+    .nav { display: flex; align-items: center; justify-content: space-between; padding: 0.9rem 0; }
+    .logo { font-weight: 800; color: #0284c7; }
+    .logo span { color: #fbbf24; }
+    .nav-links { display: flex; gap: 1.25rem; color: #64748b; }
+    .nav-links a:hover { color: #0284c7; }
+    .blog-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.2rem; margin-top: 1rem; }
+    @media (max-width: 960px) { .blog-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+    @media (max-width: 720px) { .blog-grid { grid-template-columns: minmax(0, 1fr); } }
+    .blog-card { padding: 1rem 1.1rem; }
+    footer { border-top: 1px solid #e5e7eb; padding: 1.2rem 0; text-align: center; color: #94a3b8; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="logo">BUAT<span>WEB</span>KU</div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="paket.html">Paket</a>
+        <a href="blog.html">Blog</a>
+        <a href="kontak.html">Kontak</a>
+      </nav>
+      <a class="btn btn-whatsapp btn-small cta-gradient" href="https://wa.me/6285755392526?text=Halo,%20saya%20ingin%20konsultasi%20buat%20website" target="_blank" rel="noopener">Chat WhatsApp</a>
+    </div>
+  </header>
+  <main>
+    <section>
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">Blog</div>
+          <h1 class="section-title">Artikel Terbaru</h1>
+          <p class="section-subtitle">Konten singkat, visual, dan ringkas untuk bantu ambil keputusan.</p>
+        </div>
+        <div class="blog-grid">
+          <div class="blog-card card hoverable reveal">
+            <div class="blog-title">5 Alasan UMKM Wajib Punya Website Sendiri</div>
+            <div class="blog-excerpt">Website jadi pusat informasi resmi dan aset digital jangka panjang untuk bisnis.</div>
+            <div class="blog-meta">Edukasi UMKM</div>
+          </div>
+          <div class="blog-card card hoverable reveal">
+            <div class="blog-title">Perbedaan Landing Page dan Website Toko Online</div>
+            <div class="blog-excerpt">Kapan cukup landing page, kapan perlu toko online—biar hemat tapi tetap efektif.</div>
+            <div class="blog-meta">Strategi Penjualan</div>
+          </div>
+          <div class="blog-card card hoverable reveal">
+            <div class="blog-title">Cara Memilih Jasa Pembuatan Website</div>
+            <div class="blog-excerpt">Checklist fitur penting: domain, hosting, SSL, kecepatan, dan support.</div>
+            <div class="blog-meta">Tips Memilih Vendor</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      © <span id="year"></span> BuatWebku
+    </div>
+    <a class="floating-wa" href="https://wa.me/6285755392526?text=Halo,%20saya%20ingin%20buat%20website" target="_blank" rel="noopener">✆</a>
+    <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+    <script src="script.js" defer></script>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kontak – BuatWebku</title>
+  <meta name="description" content="Hubungi kami untuk konsultasi gratis pembuatan website. Chat langsung via WhatsApp atau kirim form singkat.">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+    .container { max-width: 960px; margin: 0 auto; padding: 0 1.25rem; }
+    header { position: sticky; top: 0; z-index: 10; background: rgba(248, 250, 252, 0.95); backdrop-filter: blur(8px); border-bottom: 1px solid #e5e7eb; }
+    .nav { display: flex; align-items: center; justify-content: space-between; padding: 0.9rem 0; }
+    .logo { font-weight: 800; color: #0284c7; }
+    .logo span { color: #fbbf24; }
+    .nav-links { display: flex; gap: 1.25rem; color: #64748b; }
+    .nav-links a:hover { color: #0284c7; }
+    .contact-grid { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 1.4rem; }
+    @media (max-width: 720px) { .contact-grid { grid-template-columns: minmax(0, 1fr); } }
+    form { display: grid; gap: 0.7rem; }
+    label { font-size: 0.85rem; color: #4b5563; }
+    input, textarea { width: 100%; padding: 0.6rem 0.7rem; border: 1px solid #d1d5db; border-radius: 10px; font-size: 0.95rem; }
+    textarea { min-height: 100px; resize: vertical; }
+    footer { border-top: 1px solid #e5e7eb; padding: 1.2rem 0; text-align: center; color: #94a3b8; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="logo">BUAT<span>WEB</span>KU</div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="paket.html">Paket</a>
+        <a href="blog.html">Blog</a>
+        <a href="kontak.html">Kontak</a>
+      </nav>
+      <a class="btn btn-whatsapp btn-small cta-gradient" href="https://wa.me/6285755392526?text=Halo,%20saya%20ingin%20konsultasi%20buat%20website" target="_blank" rel="noopener">Chat WhatsApp</a>
+    </div>
+  </header>
+  <main>
+    <section>
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">Kontak</div>
+          <h1 class="section-title">Konsultasi Gratis</h1>
+          <p class="section-subtitle">Langsung klik tombol WhatsApp untuk ngobrol, atau isi form singkat di bawah.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="card hoverable reveal" style="padding:1rem 1.1rem;">
+            <h3 style="font-weight:800; font-size:1.05rem;">Hubungi via WhatsApp</h3>
+            <p style="color:#64748b; margin:0.4rem 0 0.8rem;">Nomor WhatsApp: 0857-5539-2526</p>
+            <a class="btn btn-whatsapp cta-gradient" href="https://wa.me/6285755392526?text=Halo,%20saya%20ingin%20konsultasi%20tentang%20pembuatan%20website" target="_blank" rel="noopener">Chat Sekarang</a>
+          </div>
+          <div class="card hoverable reveal" style="padding:1rem 1.1rem;">
+            <form>
+              <div>
+                <label for="nama">Nama</label>
+                <input id="nama" type="text" placeholder="Nama lengkap Anda">
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="Email aktif">
+              </div>
+              <div>
+                <label for="wa">Nomor WhatsApp</label>
+                <input id="wa" type="text" placeholder="Contoh: 08xxxxxxxxxx">
+              </div>
+              <div>
+                <label for="pesan">Ceritakan singkat kebutuhan website Anda</label>
+                <textarea id="pesan" placeholder="Contoh: butuh landing page untuk jualan produk A, target market, dll"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary cta-gradient">Kirim Form</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      © <span id="year"></span> BuatWebku
+    </div>
+    <a class="floating-wa" href="https://wa.me/6285755392526?text=Halo,%20saya%20ingin%20buat%20website" target="_blank" rel="noopener">✆</a>
+    <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+    <script src="script.js" defer></script>
+  </footer>
+</body>
+</html>

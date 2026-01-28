@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jasa Pembuatan Website UMKM & Bisnis | Mulai 599rb</title>
+  <meta name="description" content="Jasa pembuatan website dan landing page untuk UMKM dan bisnis. Mulai 599 ribu sudah termasuk domain, hosting, WhatsApp, dan SEO friendly.">
+  <meta name="keywords" content="jasa pembuatan website, bikin website murah, jasa landing page UMKM, jasa buat website, website bisnis, jasa website profesional">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    :root {
+      --primary: #0ea5e9;
+      --primary-dark: #0284c7;
+      --accent: #fbbf24;
+      --bg: #f9fafb;
+      --text: #0f172a;
+      --muted: #6b7280;
+      --whatsapp: #22c55e;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+    a { text-decoration: none; color: inherit; }
+    .container { width: 100%; max-width: 1120px; margin: 0 auto; padding: 0 1.25rem; }
+    header { position: sticky; top: 0; z-index: 10; background: rgba(249, 250, 251, 0.95); backdrop-filter: blur(8px); border-bottom: 1px solid #e5e7eb; }
+    .nav { display: flex; align-items: center; justify-content: space-between; padding: 0.9rem 0; }
+    .logo { font-weight: 800; font-size: 1.1rem; letter-spacing: 0.05em; color: var(--primary-dark); }
+    .logo span { color: var(--accent); }
+    .nav-links { display: flex; gap: 1.25rem; font-size: 0.95rem; }
+    .nav-links a { color: var(--muted); }
+    .nav-links a:hover { color: var(--primary-dark); }
+    .btn { display: inline-flex; align-items: center; justify-content: center; padding: 0.7rem 1.4rem; border-radius: 999px; font-weight: 600; font-size: 0.95rem; border: none; cursor: pointer; transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease; white-space: nowrap; }
+    .btn-primary { background: var(--primary); color: white; box-shadow: 0 10px 18px rgba(14, 165, 233, 0.35); }
+    .btn-primary:hover { background: var(--primary-dark); transform: translateY(-1px); box-shadow: 0 14px 22px rgba(14, 165, 233, 0.4); }
+    .btn-outline { background: white; color: var(--primary-dark); border: 1px solid #dbeafe; }
+    .btn-outline:hover { background: #eff6ff; }
+    .btn-whatsapp { background: var(--whatsapp); color: white; box-shadow: 0 10px 18px rgba(34, 197, 94, 0.35); }
+    .btn-whatsapp:hover { background: #16a34a; transform: translateY(-1px); box-shadow: 0 14px 22px rgba(34, 197, 94, 0.4); }
+    .btn-small { padding: 0.45rem 1.1rem; font-size: 0.85rem; }
+    main { padding-bottom: 4rem; }
+    #home { padding: 3.5rem 0 3rem; }
+    .hero-grid { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); gap: 2.5rem; align-items: center; }
+    .hero-eyebrow { display: inline-flex; align-items: center; gap: 0.6rem; padding: 0.2rem 0.6rem 0.2rem 0.25rem; border-radius: 999px; background: #e0f2fe; color: #0369a1; font-size: 0.8rem; margin-bottom: 0.9rem; }
+    .hero-eyebrow span { padding: 0.15rem 0.6rem; border-radius: 999px; background: white; font-weight: 600; color: #ea580c; border: 1px dashed #fed7aa; }
+    .hero-title { font-size: clamp(2.1rem, 3vw, 2.6rem); font-weight: 800; letter-spacing: -0.03em; margin-bottom: 0.8rem; color: #020617; }
+    .hero-title span { color: var(--primary-dark); }
+    .hero-subtitle { font-size: 0.98rem; color: var(--muted); margin-bottom: 1.4rem; max-width: 32rem; }
+    .hero-highlight { display: flex; flex-wrap: wrap; gap: 0.7rem; margin-bottom: 1.6rem; font-size: 0.9rem; }
+    .hero-highlight span { padding: 0.3rem 0.7rem; border-radius: 999px; background: white; border: 1px solid #e5e7eb; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 0.8rem; align-items: center; margin-bottom: 1rem; }
+    .hero-caption { font-size: 0.8rem; color: var(--muted); }
+    .hero-right { position: relative; padding: 1.4rem; }
+    .hero-card { background: white; border-radius: 1.5rem; padding: 1.4rem 1.5rem; box-shadow: 0 18px 40px rgba(15, 23, 42, 0.12); border: 1px solid #e5e7eb; }
+    .hero-card-title { font-size: 0.95rem; font-weight: 700; margin-bottom: 0.5rem; color: #0f172a; }
+    .hero-card-sub { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.8rem; }
+    .hero-stats { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.8rem; margin-bottom: 1rem; }
+    .hero-stat { padding: 0.7rem 0.8rem; border-radius: 0.9rem; background: #f9fafb; border: 1px dashed #e5e7eb; font-size: 0.8rem; }
+    .hero-stat strong { display: block; font-size: 0.95rem; margin-bottom: 0.25rem; }
+    .hero-pill { display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.35rem 0.75rem; border-radius: 999px; background: #ecfdf3; color: #166534; font-size: 0.8rem; }
+    section { padding: 3rem 0; }
+    .section-header { text-align: center; margin-bottom: 2rem; }
+    .section-kicker { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.16em; color: #0ea5e9; font-weight: 700; margin-bottom: 0.4rem; }
+    .section-title { font-size: 1.6rem; font-weight: 800; letter-spacing: -0.03em; margin-bottom: 0.4rem; color: #020617; }
+    .section-subtitle { font-size: 0.95rem; color: var(--muted); max-width: 32rem; margin: 0 auto; }
+    .features-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.4rem; }
+    .feature-card { background: white; border-radius: 1.1rem; padding: 1.2rem 1.3rem; border: 1px solid #e5e7eb; font-size: 0.9rem; box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06); }
+    .feature-icon { font-size: 1.4rem; margin-bottom: 0.5rem; }
+    .feature-title { font-weight: 700; margin-bottom: 0.3rem; font-size: 0.95rem; }
+    .feature-text { color: var(--muted); font-size: 0.88rem; }
+    .pricing-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.2rem; }
+    .plan-card { background: white; border-radius: 1.1rem; padding: 1.3rem 1.2rem 1.4rem; border: 1px solid #e5e7eb; box-shadow: 0 12px 26px rgba(15, 23, 42, 0.07); display: flex; flex-direction: column; gap: 0.6rem; font-size: 0.9rem; }
+    .plan-badge { font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: #0ea5e9; }
+    .plan-name { font-weight: 800; font-size: 1rem; color: #020617; }
+    .plan-tagline { font-size: 0.85rem; color: var(--muted); margin-bottom: 0.25rem; }
+    .plan-price { margin: 0.5rem 0; }
+    .price-old { font-size: 0.8rem; color: #9ca3af; text-decoration: line-through; display: block; }
+    .price-new { font-size: 1.1rem; font-weight: 800; color: #16a34a; }
+    .plan-suitable { font-size: 0.8rem; color: #f97316; background: #fff7ed; padding: 0.35rem 0.5rem; border-radius: 0.6rem; display: inline-block; margin-bottom: 0.25rem; }
+    .plan-list { list-style: none; font-size: 0.86rem; color: var(--muted); margin: 0.5rem 0 0.8rem; }
+    .plan-list li { padding-left: 1.1rem; position: relative; margin-bottom: 0.28rem; }
+    .plan-list li::before { content: "✅"; position: absolute; left: 0; top: 0.05rem; font-size: 0.8rem; }
+    .plan-highlight { font-size: 0.82rem; color: #16a34a; margin-bottom: 0.8rem; }
+    .plan-cta { margin-top: auto; }
+    .compare-wrapper { margin-top: 1.5rem; overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.86rem; background: white; border-radius: 1rem; overflow: hidden; box-shadow: 0 12px 26px rgba(15, 23, 42, 0.07); }
+    thead { background: #eff6ff; }
+    th, td { padding: 0.7rem 0.9rem; text-align: left; border-bottom: 1px solid #e5e7eb; }
+    th { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.12em; color: #6b7280; }
+    tbody tr:last-child td { border-bottom: none; }
+    tbody tr:nth-child(even) { background: #f9fafb; }
+    .compare-highlight { font-weight: 600; color: #16a34a; }
+    .compare-bad { color: #ef4444; font-weight: 500; }
+    .testi-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.2rem; }
+    .testi-card { background: white; border-radius: 1.1rem; padding: 1.1rem 1.2rem; border: 1px solid #e5e7eb; box-shadow: 0 10px 22px rgba(15, 23, 42, 0.06); font-size: 0.88rem; }
+    .testi-text { color: var(--muted); margin-bottom: 0.6rem; }
+    .testi-name { font-weight: 700; font-size: 0.9rem; color: #0f172a; }
+    .testi-role { font-size: 0.8rem; color: #9ca3af; }
+    .blog-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.2rem; }
+    .blog-card { background: white; border-radius: 1.1rem; padding: 1.1rem 1.2rem; border: 1px solid #e5e7eb; box-shadow: 0 10px 22px rgba(15, 23, 42, 0.06); font-size: 0.88rem; }
+    .blog-title { font-weight: 700; font-size: 0.95rem; margin-bottom: 0.3rem; color: #0f172a; }
+    .blog-excerpt { color: var(--muted); margin-bottom: 0.5rem; }
+    .blog-meta { font-size: 0.75rem; color: #9ca3af; }
+    .faq-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.2rem; margin-top: 1.5rem; }
+    .faq-item { background: white; border-radius: 1rem; padding: 0.9rem 1rem; border: 1px solid #e5e7eb; font-size: 0.88rem; }
+    .faq-q { font-weight: 700; margin-bottom: 0.3rem; color: #0f172a; }
+    .faq-a { color: var(--muted); }
+    .contact-wrapper { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 1.5rem; margin-top: 1.5rem; }
+    .contact-text { font-size: 0.9rem; color: var(--muted); margin-bottom: 0.8rem; }
+    form { display: grid; gap: 0.7rem; }
+    label { font-size: 0.8rem; color: #4b5563; margin-bottom: 0.15rem; display: block; }
+    input, textarea { width: 100%; padding: 0.55rem 0.7rem; border-radius: 0.6rem; border: 1px solid #d1d5db; font-size: 0.9rem; font-family: inherit; }
+    textarea { resize: vertical; min-height: 80px; }
+    input:focus, textarea:focus { outline: 2px solid #bfdbfe; border-color: #60a5fa; }
+    footer { border-top: 1px solid #e5e7eb; padding: 1.4rem 0 1.6rem; font-size: 0.8rem; color: #9ca3af; text-align: center; }
+    .footer-links { margin-top: 0.4rem; display: flex; justify-content: center; gap: 1rem; font-size: 0.8rem; }
+    .footer-links a { color: #6b7280; }
+    .footer-links a:hover { color: var(--primary-dark); }
+    @media (max-width: 960px) {
+      .hero-grid { grid-template-columns: minmax(0, 1fr); }
+      .hero-right { order: -1; }
+      .features-grid, .pricing-grid, .testi-grid, .blog-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .contact-wrapper { grid-template-columns: minmax(0, 1fr); }
+    }
+    @media (max-width: 720px) {
+      .nav { flex-wrap: wrap; gap: 0.7rem; }
+      .nav-links { width: 100%; justify-content: center; flex-wrap: wrap; }
+      .hero-actions { flex-direction: column; align-items: flex-start; }
+      .features-grid, .pricing-grid, .testi-grid, .blog-grid, .faq-grid { grid-template-columns: minmax(0, 1fr); }
+      section { padding: 2.4rem 0; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="logo">BUAT<span>WEB</span>KU</div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="paket.html">Paket</a>
+        <a href="#perbandingan">Perbandingan</a>
+        <a href="blog.html">Blog</a>
+        <a href="kontak.html">Kontak</a>
+      </nav>
+      <a class="btn btn-whatsapp btn-small" href="https://wa.me/6285755392526?text=Halo,%20saya%20ingin%20konsultasi%20buat%20website" target="_blank" rel="noopener">
+        Chat WhatsApp
+      </a>
+    </div>
+  </header>
+  <main>
+    <section id="home">
+      <div class="container hero-grid">
+        <div>
+          <div class="hero-eyebrow">
+            <span>Promo terbatas</span>
+            Mulai 599 ribu sudah online
+          </div>
+          <h1 class="hero-title">
+            Jasa Pembuatan Website <span>UMKM & Bisnis</span> Mulai 599rb
+          </h1>
+          <p class="hero-subtitle">
+            Bikin website profesional, mobile friendly, sudah termasuk domain, hosting, dan integrasi WhatsApp. Cocok untuk UMKM, jasa, dan brand yang ingin cepat tampil meyakinkan di Google.
+          </p>
+          <div class="hero-highlight">
+            <span>✅ Domain + Hosting 1 Tahun</span>
+            <span>✅ SEO Friendly & Cepat Diakses</span>
+            <span>✅ Full Support After Sales</span>
+          </div>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://wa.me/6285755392526?text=Halo,%20saya%20ingin%20buat%20website%20untuk%20bisnis%20saya" target="_blank" rel="noopener">
+              Konsultasi Gratis via WhatsApp
+            </a>
+            <a class="btn btn-outline" href="#paket">Lihat Paket Website</a>
+          </div>
+          <div class="hero-caption">Tanpa ribet. Tinggal kirim data, website Anda kami urus hingga online.</div>
+        </div>
+        <div class="hero-right hero-visual reveal">
+          <div class="hero-card card hoverable">
+            <div class="hero-card-title">Kenapa banyak UMKM pilih kami?</div>
+            <div class="hero-card-sub">Fokus ke website simpel yang cepat hasilkan closing.</div>
+            <div class="hero-stats">
+              <div class="hero-stat">
+                <strong>+50 Website</strong>
+                UMKM, jasa, dan personal branding yang sudah dibantu.
+              </div>
+              <div class="hero-stat">
+                <strong>99% Puas</strong>
+                Klien puas dengan kecepatan, tampilan, dan kemudahan pengelolaan.
+              </div>
+            </div>
+            <div class="hero-pill">🚀 Cepat online • Tinggal kirim data, 3–5 hari langsung live</div>
+          </div>
+          <div class="blob b1"></div>
+          <div class="blob b2"></div>
+          <div class="mock reveal" style="margin-top:14px;">
+            <div class="bar"></div>
+            <div class="line" style="width:80%"></div>
+            <div class="line" style="width:60%"></div>
+            <div class="line" style="width:90%"></div>
+            <div class="cta"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="keunggulan">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">Keunggulan Layanan</div>
+          <h2 class="section-title">Website Menarik, Cepat, dan Siap Closing</h2>
+          <p class="section-subtitle">Kami gabungkan desain yang cerah dan modern dengan struktur yang SEO friendly, sehingga website tidak hanya enak dilihat, tapi juga bekerja untuk mendatangkan pelanggan.</p>
+        </div>
+        <div class="features-grid">
+          <div class="feature-card card hoverable reveal">
+            <div class="feature-icon">💡</div>
+            <div class="feature-title">Desain Cerah & Modern</div>
+            <div class="feature-text">Tampilan profesional dengan warna cerah yang bikin brand Anda terlihat hidup dan terpercaya di mata calon pelanggan.</div>
+          </div>
+          <div class="feature-card card hoverable reveal">
+            <div class="feature-icon">📱</div>
+            <div class="feature-title">Mobile Friendly</div>
+            <div class="feature-text">Layout responsif yang nyaman di smartphone, tablet, dan desktop. Mayoritas trafik sekarang dari HP – website Anda siap.</div>
+          </div>
+          <div class="feature-card card hoverable reveal">
+            <div class="feature-icon">🧭</div>
+            <div class="feature-title">SEO Friendly</div>
+            <div class="feature-text">Struktur heading, meta title, dan meta description kami atur agar website lebih mudah ditemukan di Google.</div>
+          </div>
+          <div class="feature-card card hoverable reveal">
+            <div class="feature-icon">🔒</div>
+            <div class="feature-title">Aman & Cepat</div>
+            <div class="feature-text">Sudah termasuk SSL gratis dan optimasi basic kecepatan sehingga website terasa ringan saat diakses pengunjung.</div>
+          </div>
+          <div class="feature-card card hoverable reveal">
+            <div class="feature-icon">💬</div>
+            <div class="feature-title">Integrasi WhatsApp Otomatis</div>
+            <div class="feature-text">Tombol chat WhatsApp langsung ke nomor Anda: 0857-5539-2526. Pengunjung tinggal klik, langsung ngobrol.</div>
+          </div>
+          <div class="feature-card card hoverable reveal">
+            <div class="feature-icon">🤝</div>
+            <div class="feature-title">Support After Sales</div>
+            <div class="feature-text">Kami bantu sampai website benar-benar bisa dipakai. Khusus paket tertentu, termasuk maintenance ringan setelah live.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="paket">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">Paket Website</div>
+          <h2 class="section-title">Pilih Paket Sesuai Kebutuhan Bisnis</h2>
+          <p class="section-subtitle">Semua paket sudah termasuk domain, hosting 1 tahun, SSL, desain menarik, mobile friendly, dan integrasi WhatsApp langsung ke nomor Anda.</p>
+        </div>
+        <div class="pricing-grid">
+          <div class="plan-card card hoverable reveal">
+            <div class="plan-badge">Paket 1</div>
+            <div class="plan-name">Starter Landing</div>
+            <div class="plan-tagline">Pas untuk mulai dulu tapi tetap terlihat profesional.</div>
+            <div class="plan-price"><span class="price-old">Rp 1.500.000</span><span class="price-new">Rp 599.000</span></div>
+            <div class="plan-suitable">Cocok: UMKM baru, personal, 1 produk / jasa</div>
+            <ul class="plan-list">
+              <li>1 Halaman Website (Landing Page)</li>
+              <li>Free Domain + Hosting aktif 1 tahun</li>
+              <li>Basic Landing Page Design</li>
+              <li>Desain Template siap pakai</li>
+              <li>Integrasi WhatsApp (klik langsung chat)</li>
+              <li>Mobile Friendly</li>
+              <li>Basic SEO (Title & Meta)</li>
+            </ul>
+            <div class="plan-highlight">👉 Cepat online, murah, langsung bisa closing</div>
+            <div class="plan-cta">
+              <a class="btn btn-whatsapp btn-small" href="https://wa.me/6285755392526?text=Halo,%20saya%20tertarik%20Paket%201%20Starter%20Landing" target="_blank" rel="noopener">Pilih Paket Starter</a>
+            </div>
+          </div>
+          <div class="plan-card card hoverable reveal">
+            <div class="plan-badge">Paket 2</div>
+            <div class="plan-name">Business Basic</div>
+            <div class="plan-tagline">Tampilkan profil bisnis lebih lengkap dan meyakinkan.</div>
+            <div class="plan-price"><span class="price-old">Rp 2.500.000</span><span class="price-new">Rp 990.000</span></div>
+            <div class="plan-suitable">Cocok: UMKM serius, jasa, toko kecil</div>
+            <ul class="plan-list">
+              <li>3 Halaman Website (Home – About – Contact / Produk)</li>
+              <li>Free Domain + Hosting aktif 1 tahun</li>
+              <li>Basic Web Design</li>
+              <li>Desain custom sesuai brand</li>
+              <li>Integrasi WhatsApp</li>
+              <li>Mobile Friendly</li>
+              <li>Basic SEO</li>
+              <li>Form kontak</li>
+            </ul>
+            <div class="plan-highlight">👉 Lebih profesional & dipercaya customer</div>
+            <div class="plan-cta">
+              <a class="btn btn-whatsapp btn-small" href="https://wa.me/6285755392526?text=Halo,%20saya%20tertarik%20Paket%202%20Business%20Basic" target="_blank" rel="noopener">Pilih Paket Business Basic</a>
+            </div>
+          </div>
+          <div class="plan-card card hoverable popular reveal">
+            <div class="badge-hot">🔥 PALING LARIS</div>
+            <div class="plan-badge">Paket 3</div>
+            <div class="plan-name">Business Pro</div>
+            <div class="plan-tagline">Siap untuk bisnis berkembang dan butuh update konten.</div>
+            <div class="plan-price"><span class="price-old">Rp 4.500.000</span><span class="price-new">Rp 1.700.000</span></div>
+            <div class="plan-suitable">Cocok: bisnis berkembang, portfolio, brand</div>
+            <ul class="plan-list">
+              <li>5 Halaman Website</li>
+              <li>1 Halaman Dinamis (Blog / Artikel / Produk update)</li>
+              <li>Free Domain + Hosting aktif 1 tahun</li>
+              <li>Basic Web Design</li>
+              <li>Desain custom</li>
+              <li>Integrasi WhatsApp</li>
+              <li>Mobile Friendly</li>
+              <li>Basic SEO</li>
+              <li>Admin panel sederhana untuk halaman dinamis</li>
+            </ul>
+            <div class="plan-highlight">👉 Bisa update konten sendiri tanpa ribet</div>
+            <div class="plan-cta">
+              <a class="btn btn-whatsapp btn-small" href="https://wa.me/6285755392526?text=Halo,%20saya%20tertarik%20Paket%203%20Business%20Pro" target="_blank" rel="noopener">Pilih Paket Business Pro</a>
+            </div>
+          </div>
+          <div class="plan-card card hoverable reveal">
+            <div class="plan-badge">Paket 4</div>
+            <div class="plan-name">Business Premium</div>
+            <div class="plan-tagline">Untuk perusahaan & brand yang ingin tampil sangat premium.</div>
+            <div class="plan-price"><span class="price-old">Rp 7.000.000</span><span class="price-new">Rp 3.900.000</span></div>
+            <div class="plan-suitable">Cocok: perusahaan, brand kuat, jasa besar</div>
+            <ul class="plan-list">
+              <li>5 Halaman Website</li>
+              <li>3 Halaman Dinamis (Blog + Produk + Testimoni / News)</li>
+              <li>Free Domain + Hosting aktif 1 tahun</li>
+              <li>Basic Web Design</li>
+              <li>Desain custom premium</li>
+              <li>Integrasi WhatsApp</li>
+              <li>Mobile Friendly</li>
+              <li>SEO On-Page lebih lengkap</li>
+              <li>Admin panel</li>
+              <li>Free maintenance ringan (1 bulan)</li>
+            </ul>
+            <div class="plan-highlight">👉 Website serius, scalable, kelihatan “mahal”</div>
+            <div class="plan-cta">
+              <a class="btn btn-whatsapp btn-small" href="https://wa.me/6285755392526?text=Halo,%20saya%20tertarik%20Paket%204%20Business%20Premium" target="_blank" rel="noopener">Pilih Paket Business Premium</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="perbandingan">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">Perbandingan</div>
+          <h2 class="section-title">Lebih Untung Dibanding Kompetitor Biasa</h2>
+          <p class="section-subtitle">Banyak jasa bikin website yang tampaknya murah, tapi fitur penting justru dipisah dan jadi biaya tambahan. Di sini, semuanya sudah dibundle rapi dan jelas di depan.</p>
+        </div>
+        <div class="compare-wrapper reveal">
+          <table>
+            <thead>
+              <tr><th>Fitur & Layanan</th><th>Kami</th><th>Kompetitor Biasa</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Harga Terjangkau</td><td class="compare-highlight">✅ Mulai 599 ribu</td><td class="compare-bad">❌ Lebih mahal</td></tr>
+              <tr><td>SEO Friendly</td><td class="compare-highlight">✅ Sudah include</td><td class="compare-bad">❌ Tidak selalu ada</td></tr>
+              <tr><td>Mobile Friendly</td><td class="compare-highlight">✅ Fully responsive</td><td>✅ Kadang terbatas</td></tr>
+              <tr><td>Gratis Domain</td><td class="compare-highlight">✅ 1 Tahun</td><td class="compare-bad">❌ Tidak selalu</td></tr>
+              <tr><td>Gratis Hosting</td><td class="compare-highlight">✅ 1 Tahun</td><td class="compare-bad">❌ Tidak termasuk</td></tr>
+              <tr><td>SSL Certificate</td><td class="compare-highlight">✅ Gratis & aman</td><td class="compare-bad">❌ Tidak selalu ada</td></tr>
+              <tr><td>Maintenance & Support</td><td class="compare-highlight">✅ Support after sales</td><td class="compare-bad">❌ Terbatas / tambahan biaya</td></tr>
+              <tr><td>Custom Desain</td><td class="compare-highlight">✅ Bisa sesuai kebutuhan</td><td class="compare-bad">❌ Hanya template</td></tr>
+              <tr><td>Integrasi WhatsApp</td><td class="compare-highlight">✅ Otomatis</td><td class="compare-bad">❌ Tidak semua</td></tr>
+              <tr><td>Kecepatan Website</td><td class="compare-highlight">✅ Optimal & cepat</td><td class="compare-bad">❌ Kadang lambat</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="section-subtitle" style="margin-top:1.4rem;">Dengan layanan kami, bisnis Anda tidak hanya punya website yang menarik, tapi juga cepat, aman, SEO friendly, dan siap bersaing di Google.</p>
+      </div>
+    </section>
+    <section id="testimoni">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">Testimoni Klien</div>
+          <h2 class="section-title">Yang Sudah Order Bicara Apa?</h2>
+          <p class="section-subtitle">Beberapa cerita singkat dari klien yang sudah mempercayakan website bisnisnya kepada kami.</p>
+        </div>
+        <div class="carousel card reveal">
+          <div class="slides">
+            <div class="slide">
+              <div class="testi-card">
+                <div style="display:flex;align-items:center;margin-bottom:6px;">
+                  <div class="avatar">R</div><div class="testi-name">Rina</div><div class="testi-role" style="margin-left:8px;">Owner Toko Kue</div>
+                </div>
+                <div class="testi-text">“Sejak pakai website ini, orderan via WhatsApp naik drastis. Pelanggan tinggal klik dan langsung chat, jauh lebih mudah closing.”</div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="testi-card">
+                <div style="display:flex;align-items:center;margin-bottom:6px;">
+                  <div class="avatar">B</div><div class="testi-name">Budi</div><div class="testi-role" style="margin-left:8px;">Servis Elektronik</div>
+                </div>
+                <div class="testi-text">“Prosesnya cepat, hasilnya rapi dan modern. Admin responsif bantu revisi kecil-kecil sampai saya benar-benar puas.”</div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="testi-card">
+                <div style="display:flex;align-items:center;margin-bottom:6px;">
+                  <div class="avatar">D</div><div class="testi-name">Dita</div><div class="testi-role" style="margin-left:8px;">Konsultan</div>
+                </div>
+                <div class="testi-text">“Website-nya ringan, gampang diakses pelanggan, dan tampilannya bikin brand saya terlihat jauh lebih profesional.”</div>
+              </div>
+            </div>
+          </div>
+          <div class="dots"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+        </div>
+      </div>
+    </section>
+    <section id="blog">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">Artikel & Edukasi</div>
+          <h2 class="section-title">Konten untuk Tarik Trafik dari Google</h2>
+          <p class="section-subtitle">Halaman blog membantu website Anda lebih kaya konten, sehingga peluang muncul di pencarian Google semakin besar.</p>
+        </div>
+        <div class="blog-grid reveal">
+          <div class="blog-card">
+            <div class="blog-title">5 Alasan UMKM Wajib Punya Website Sendiri</div>
+            <div class="blog-excerpt">Masih mengandalkan media sosial saja? Di artikel ini Anda akan melihat kenapa website bisa jadi aset digital jangka panjang untuk bisnis.</div>
+            <div class="blog-meta">Kategori: Edukasi UMKM</div>
+          </div>
+          <div class="blog-card">
+            <div class="blog-title">Perbedaan Landing Page dan Website Toko Online</div>
+            <div class="blog-excerpt">Tidak semua bisnis butuh toko online lengkap. Kadang landing page yang fokus ke 1 tujuan justru lebih efektif dan murah.</div>
+            <div class="blog-meta">Kategori: Strategi Penjualan</div>
+          </div>
+          <div class="blog-card">
+            <div class="blog-title">Cara Memilih Jasa Pembuatan Website yang Tepat</div>
+            <div class="blog-excerpt">Panduan singkat untuk menghindari salah pilih vendor: dari cek fitur, harga, hingga support setelah website jadi.</div>
+            <div class="blog-meta">Kategori: Tips Memilih Vendor</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="faq-kontak">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">FAQ & Kontak</div>
+          <h2 class="section-title">Masih Ragu? Yuk Konsultasi Gratis</h2>
+          <p class="section-subtitle">Sampaikan dulu kebutuhan dan jenis bisnis Anda. Kami bantu rekomendasikan paket yang paling pas, tanpa memaksa.</p>
+        </div>
+        <div class="faq-grid reveal">
+          <div class="accordion-item">
+            <button class="accordion-header">Berapa lama website bisa selesai?</button>
+            <div class="accordion-body">
+              <p>Untuk paket landing page, rata-rata 3–5 hari kerja setelah semua data diterima. Paket yang lebih kompleks bisa 7–14 hari, tergantung revisi.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-header">Apakah nanti saya bisa update sendiri?</button>
+            <div class="accordion-body">
+              <p>Ya. Khusus paket dengan halaman dinamis dan admin panel, Anda bisa update konten sendiri seperti blog, produk, atau testimoni.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-header">Apakah sudah termasuk biaya domain dan hosting?</button>
+            <div class="accordion-body">
+              <p>Sudah. Semua paket yang tercantum sudah termasuk domain dan hosting aktif 1 tahun, plus SSL agar website aman diakses.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-header">Kalau saya tidak punya materi, apakah bisa dibantu?</button>
+            <div class="accordion-body">
+              <p>Bisa. Kami bantu susun struktur konten dasar dan copywriting sederhana, lalu Anda tinggal koreksi dan lengkapi jika perlu.</p>
+            </div>
+          </div>
+        </div>
+        <section id="kontak">
+          <div class="contact-wrapper">
+            <div>
+              <h3 style="font-size:1.1rem; font-weight:700; margin-bottom:0.4rem;">Hubungi Kami Sekarang</h3>
+              <p class="contact-text">Kirimkan data singkat tentang bisnis Anda melalui form ini, atau jika ingin lebih cepat, langsung klik tombol WhatsApp di bawah. Kami akan bantu jelaskan paket yang paling cocok.</p>
+              <a class="btn btn-whatsapp cta-gradient" href="https://wa.me/6285755392526?text=Halo,%20saya%20ingin%20konsultasi%20tentang%20pembuatan%20website" target="_blank" rel="noopener" style="margin-bottom:0.7rem;">Chat Langsung via WhatsApp</a>
+              <div style="font-size:0.82rem; color:#6b7280; margin-top:0.3rem;">Nomor WhatsApp: 0857-5539-2526</div>
+            </div>
+            <div>
+              <form>
+                <div>
+                  <label for="nama">Nama</label>
+                  <input id="nama" type="text" placeholder="Nama lengkap Anda">
+                </div>
+                <div>
+                  <label for="email">Email</label>
+                  <input id="email" type="email" placeholder="Email aktif">
+                </div>
+                <div>
+                  <label for="wa">Nomor WhatsApp</label>
+                  <input id="wa" type="text" placeholder="Contoh: 08xxxxxxxxxx">
+                </div>
+                <div>
+                  <label for="pesan">Ceritakan singkat kebutuhan website Anda</label>
+                  <textarea id="pesan" placeholder="Contoh: butuh landing page untuk jualan produk A, target market, dll"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Kirim Permintaan Konsultasi</button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <div>© <span id="year"></span> BuatWebku – Jasa Pembuatan Website UMKM & Bisnis.</div>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#paket">Paket</a>
+        <a href="#blog">Blog</a>
+        <a href="#kontak">Kontak</a>
+      </div>
+    </div>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    <a class="floating-wa" href="https://wa.me/6285755392526?text=Halo,%20saya%20ingin%20buat%20website" target="_blank" rel="noopener" aria-label="Chat WhatsApp">✆</a>
+    <script src="script.js" defer></script>
+  </footer>
+</body>
+</html>
+
