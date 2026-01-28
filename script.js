@@ -54,4 +54,10 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   });
+  var main = document.querySelector('main');
+  var sekKeunggulan = document.getElementById('keunggulan');
+  var sekPaket = document.getElementById('paket');
+  if (main && sekKeunggulan && sekPaket) {
+    main.insertBefore(sekPaket, sekKeunggulan);
+  }
 });
